@@ -47,6 +47,7 @@ pub fn custom_form(props: &Props) -> Html {
         <TextInput name="username" handle_onchange={username_changed} />
         <TextInput name="favorite_language" handle_onchange={language_changed} />
         <CustomButton label="Submit" />
+
       </form>
     }
 }

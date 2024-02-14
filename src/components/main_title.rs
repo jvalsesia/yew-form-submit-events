@@ -30,7 +30,7 @@ pub fn main_title(props: &Props) -> Html {
     let stylesheet = style!(
         r#"
       .normal {
-        color: white;
+        color: black;
       }
 
       .ok {
@@ -44,7 +44,7 @@ pub fn main_title(props: &Props) -> Html {
     )
     .unwrap();
 
-    props.on_load.emit("I loaded!!!!!".to_owned());
+    props.on_load.emit("Fupns loaded!!!!!".to_owned());
 
     html! {
       <div class={stylesheet}>

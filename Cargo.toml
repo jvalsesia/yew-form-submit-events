@@ -6,8 +6,13 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+chrono = { version = "0.4.34", features = ["serde"] }
 gloo = "0.11.0"
+gloo-net = { version = "0.5.0", features = ["json", "serde", "serde_json"] }
+serde = "1.0.196"
+serde_json = "1.0.113"
 stylist = { version = "0.13.0", features = ["yew"] }
 wasm-bindgen = "0.2.91"
+wasm-bindgen-futures = "0.4.41"
 web-sys = { version = "0.3.68", features = ["HtmlInputElement"] }
 yew = { version = "0.21.0", features = ["csr"] }
